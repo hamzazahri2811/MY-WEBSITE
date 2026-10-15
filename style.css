@@ -1,0 +1,335 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Cairo', sans-serif;
+    scroll-behavior: smooth;
+}
+
+body {
+    background-color: #0b0f19;
+    color: #f3f4f6;
+}
+
+/* Navbar */
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 8%;
+    background-color: rgba(11, 15, 25, 0.95);
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 1000;
+    border-bottom: 1px solid #1f293d;
+}
+
+.logo {
+    font-size: 24px;
+    font-weight: 900;
+    color: #fff;
+    letter-spacing: 1px;
+}
+
+.logo span {
+    color: #00ff88;
+}
+
+.navbar nav {
+    display: flex;
+    align-items: center;
+    gap: 30px;
+}
+
+.navbar nav a {
+    color: #9ca3af;
+    text-decoration: none;
+    font-weight: 600;
+    transition: 0.3s;
+}
+
+.navbar nav a:hover, .navbar nav a.active {
+    color: #00ff88;
+}
+
+.contact-btn {
+    background-color: transparent;
+    border: 2px solid #00ff88;
+    padding: 8px 20px;
+    border-radius: 30px;
+    color: #00ff88 !important;
+}
+
+.contact-btn:hover {
+    background-color: #00ff88;
+    color: #0b0f19 !important;
+}
+
+/* Hero Section */
+.hero {
+    height: 90vh;
+    background: linear-gradient(rgba(11, 15, 25, 0.7), rgba(11, 15, 25, 0.9)), url('https://images.unsplash.com/photo-1550745165-9bc0b252726f?q=80&w=1600&auto=format&fit=crop') no-repeat center center/cover;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    padding: 0 20px;
+    margin-top: 70px;
+}
+
+.hero-content h1 {
+    font-size: 48px;
+    font-weight: 900;
+    margin-bottom: 20px;
+    color: #fff;
+}
+
+.hero-content p {
+    font-size: 18px;
+    color: #9ca3af;
+    max-width: 600px;
+    margin: 0 auto 30px;
+    line-height: 1.6;
+}
+
+.main-btn {
+    background-color: #00ff88;
+    color: #0b0f19;
+    padding: 14px 35px;
+    font-size: 16px;
+    font-weight: 700;
+    border-radius: 30px;
+    text-decoration: none;
+    box-shadow: 0 0 20px rgba(0, 255, 136, 0.4);
+    transition: 0.3s;
+    display: inline-block;
+}
+
+.main-btn:hover {
+    background-color: #00cc6a;
+    box-shadow: 0 0 30px rgba(0, 255, 136, 0.7);
+    transform: translateY(-2px);
+}
+
+/* Games Section */
+.games-section {
+    padding: 80px 8%;
+}
+
+.section-title {
+    text-align: center;
+    font-size: 36px;
+    font-weight: 900;
+    margin-bottom: 50px;
+    color: #fff;
+}
+
+.games-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+    gap: 30px;
+}
+
+.game-card {
+    background-color: #131b2e;
+    border-radius: 15px;
+    overflow: hidden;
+    border: 1px solid #1f293d;
+    transition: 0.3s;
+}
+
+.game-card:hover {
+    transform: translateY(-8px);
+    border-color: #00ff88;
+    box-shadow: 0 10px 25px rgba(0, 255, 136, 0.1);
+}
+
+.game-img {
+    position: relative;
+    height: 200px;
+}
+
+.game-img img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.fps-badge {
+    position: absolute;
+    top: 15px;
+    left: 15px;
+    background-color: rgba(0, 0, 0, 0.8);
+    color: #00ff88;
+    padding: 5px 12px;
+    font-size: 12px;
+    font-weight: bold;
+    border-radius: 20px;
+    border: 1px solid #00ff88;
+}
+
+.game-info {
+    padding: 25px;
+}
+
+.game-info h3 {
+    font-size: 22px;
+    margin-bottom: 10px;
+    color: #fff;
+}
+
+.game-desc {
+    color: #9ca3af;
+    font-size: 14px;
+    margin-bottom: 15px;
+    line-height: 1.5;
+}
+
+.specs-box {
+    background-color: #0b0f19;
+    padding: 10px 15px;
+    border-radius: 8px;
+    font-size: 13px;
+    color: #d1d5db;
+    margin-bottom: 20px;
+    border-right: 3px solid #00ff88;
+}
+
+.details-btn {
+    display: block;
+    text-align: center;
+    background-color: #1f293d;
+    color: #fff;
+    padding: 10px;
+    border-radius: 8px;
+    text-decoration: none;
+    font-weight: 600;
+    transition: 0.3s;
+}
+
+.details-btn:hover {
+    background-color: #00ff88;
+    color: #0b0f19;
+}
+
+/* News Section */
+.news-section {
+    padding: 60px 8%;
+    background-color: #0e1422;
+}
+
+.news-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 25px;
+}
+
+.news-grid a.news-card {
+    text-decoration: none;
+    display: block;
+}
+
+.news-card {
+    background-color: #131b2e;
+    padding: 25px;
+    border-radius: 12px;
+    border: 1px solid #1f293d;
+    transition: 0.3s;
+}
+
+.news-card:hover {
+    border-color: #00ff88;
+    transform: translateY(-5px);
+}
+
+.news-card h3 {
+    font-size: 18px;
+    color: #fff;
+    margin-bottom: 10px;
+}
+
+.news-card h3 span {
+    font-size: 14px;
+    color: #00ff88;
+    margin-right: 5px;
+}
+
+.news-date {
+    font-size: 12px;
+    color: #00ff88;
+    margin-bottom: 12px;
+    font-weight: bold;
+}
+
+.news-card p:last-child {
+    font-size: 14px;
+    color: #9ca3af;
+    line-height: 1.5;
+}
+
+/* Contact Section */
+.contact-section {
+    padding: 80px 8%;
+    text-align: center;
+}
+
+.contact-subtitle {
+    color: #9ca3af;
+    margin-bottom: 40px;
+    font-size: 16px;
+}
+
+.contact-boxes {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    flex-wrap: wrap;
+}
+
+.c-box {
+    background-color: #131b2e;
+    border: 1px solid #1f293d;
+    padding: 25px 30px;
+    border-radius: 12px;
+    text-decoration: none;
+    width: 280px;
+    transition: 0.3s;
+    display: block;
+}
+
+.c-box span {
+    display: block;
+    font-size: 15px;
+    color: #9ca3af;
+    margin-bottom: 10px;
+    font-weight: bold;
+}
+
+.c-box p {
+    font-size: 16px;
+    color: #00ff88;
+    font-weight: bold;
+}
+
+.c-box:hover {
+    transform: translateY(-5px);
+    border-color: #00ff88;
+    box-shadow: 0 10px 20px rgba(0, 255, 136, 0.1);
+}
+
+/* Footer */
+.footer {
+    background-color: #070910;
+    padding: 40px 8%;
+    text-align: center;
+    border-top: 1px solid #1f293d;
+    color: #9ca3af;
+}
+
+.sub-footer {
+    font-size: 13px;
+    margin-top: 8px;
+    color: #6b7280;
+}
